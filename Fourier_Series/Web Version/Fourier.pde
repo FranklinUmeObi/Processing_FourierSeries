@@ -4,16 +4,16 @@ float a, b;
 float dotx, doty ;
 ArrayList<Float> wave = new ArrayList<Float>();
 
-void setup() 
+void setup()
 {
-  //size(1100, 500);
-  fullScreen();
+  size(1100, 500);
+  //fullScreen();
   frameRate(60);
 }
 
 
 
-void draw() 
+void draw()
 {
   background(24);
   drawFourier();
@@ -22,9 +22,9 @@ void draw()
   time += 0.01 ;
 }
 
-void drawFourier() 
+void drawFourier()
 {
-  translate(320, 380);
+  translate(220, 280);
   float x = 0;
   float y = 0;
 
@@ -32,7 +32,7 @@ void drawFourier()
   dottedLine(-700, 0, width, 0, 90);
   dottedLine(a, -700, a, height ,90);
 
-  for ( int j = 0; j < 5; j++) 
+  for ( int j = 0; j < 5; j++)
   {
     int n = (j * 2) + 1 ;
     float prevx = x;
